@@ -1,0 +1,11 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  font-style: oblique;
+  height: 3%;
+  background-image: linear-gradient(
+    100deg, blue, rgba(0, 0, 255, 0.39)
+  );
+}

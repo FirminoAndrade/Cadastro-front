@@ -1,0 +1,76 @@
+<body>
+
+  <app-menu></app-menu>
+  <h1>Formulário</h1>
+  <form>
+
+    <mat-form-field class="campo_maior">
+      <mat-label>Nome Completo</mat-label>
+      <input matInput [(ngModel)]="formulario.nome"
+      type="text"
+      name="nome" required/>
+    </mat-form-field>
+
+    <mat-form-field class="campo_maior">
+      <mat-label>Endereço</mat-label>
+      <input matInput [(ngModel)]="formulario.endereco"
+      type="text"
+      name="endereco" required/>
+    </mat-form-field>
+
+    <mat-form-field class="campo_menor">
+      <mat-label>Bairro</mat-label>
+      <input matInput [(ngModel)]="formulario.bairro"
+      type="text"
+      name="bairro" required/>
+    </mat-form-field>
+
+    <mat-form-field class="campo_menor">
+      <mat-label>Cidade</mat-label>
+      <input matInput [(ngModel)]="formulario.cidade"
+      type="text"
+      name="cidade" required/>
+    </mat-form-field>
+
+    <mat-form-field class="campo_menor">
+      <mat-label>Telefone</mat-label>
+      <input matInput #input maxlength="11" minlength="11" minlength="11" type="number" [(ngModel)]="formulario.telefone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+      name="telefone"
+      placeholder="Ex: 12345678901" required/>
+    </mat-form-field>
+
+    <mat-form-field class="campo_menor">
+      <mat-label>Data Formulário</mat-label>
+      <input matInput [(ngModel)]="formulario.data"
+      type="text"
+      name="data" disabled/>
+    </mat-form-field>
+
+    <mat-form-field class="campo_menor">
+      <mat-label>Data Nasc</mat-label>
+      <input matInput [(ngModel)]="formulario.dataNasc"
+      type="date"
+      name="dataNasc"/>
+    </mat-form-field>
+
+    <mat-form-field class="campo_menor">
+      <mat-label>Gênero</mat-label>
+      <mat-select [(ngModel)]="formulario.genero" name="genero" required>
+        <mat-option *ngFor="let select of tipoGenero" [value]="select.valor">
+          {{select.valor}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="campo_menor">
+      <mat-label>Idade</mat-label>
+      <input matInput [(ngModel)]="formulario.idade"
+      type="text"
+      name="idade" required/>
+    </mat-form-field>
+    <div class="buttons">
+      <button (click)="criarFormulario()" class="mat-elevation-z8" mat-raised-button color="primary">SALVAR</button>
+    </div>
+  </form>
+</body>
+  <app-footer></app-footer>

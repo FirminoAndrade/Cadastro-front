@@ -1,0 +1,17 @@
+<mat-toolbar class="header">
+  <span>
+    <img src="assets/img/form-icon.png" alt="">
+  </span>
+  <div class="icons">
+    <button class="menu" mat-icon-button [matMenuTriggerFor]="opcoes"><mat-icon>menu</mat-icon></button>
+    <mat-menu #opcoes="matMenu">
+    <button mat-menu-item routerLink="/home"><mat-icon>home</mat-icon>HOME</button>
+    <button mat-menu-item routerLink="/formulario"><mat-icon>book</mat-icon>FORMULÁRIO</button>
+    <button mat-menu-item routerLink="/lista"><mat-icon>personal</mat-icon>LISTAR TODOS</button>
+    <button mat-menu-item routerLink="/sobre"><mat-icon>information</mat-icon>INFO. SISTEMA</button>
+    <button mat-menu-item routerLink=""><mat-icon>exit_to_app</mat-icon>SAIR</button>
+  </mat-menu>
+</div>
+</mat-toolbar>
+
+
