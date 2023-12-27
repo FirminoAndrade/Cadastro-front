@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { IFormulario } from 'src/app/model/formulario.model';
 import { IGenero } from 'src/app/model/genero.modelo';
@@ -9,7 +9,7 @@ import { FormularioService } from 'src/app/service/formulario.service';
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.css'],
 })
-export class FormularioComponent {
+export class FormularioComponent implements OnInit{
   formulario: IFormulario = {
     nome: '',
     endereco: '',
