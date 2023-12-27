@@ -84,8 +84,8 @@ button {
 
   img {
     margin: 0px auto;
-    height: 170px;
-    width: 170px;
+    height: 200px;
+    width: 200px;
     filter: drop-shadow(10px 10px 10px black);
   }
 
@@ -99,7 +99,8 @@ button {
   }
 
   button {
-    margin-top: 10px;
+    margin-top: 50px;
+    width: 100%;
     filter: drop-shadow(10px 10px 10px black);
     color: white;
   }
