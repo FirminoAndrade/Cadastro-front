@@ -14,8 +14,8 @@ span {
   font-size: 45px;
   text-align: center;
   font-weight: bold;
-  color:  rgb(8, 8, 8);
-  font-family: Poppins,sans-serif;
+  color: rgb(8, 8, 8);
+  font-family: Poppins, sans-serif;
 }
 
 .conteudo-login {
@@ -30,12 +30,12 @@ span {
 
 .border-conteudo {
   width: 90%;
-  border: solid 2px  rgb(8, 8, 8);
+  border: solid 2px rgb(8, 8, 8);
   padding: 1px 20px;
   margin: 2%;
-  box-shadow: 2px 3px 6px  rgb(15, 15, 15);
+  box-shadow: 2px 3px 6px rgb(15, 15, 15);
   border-radius: 10px;
-  background-color: white;
+  background-color: rgba(0, 0, 255, 0.445);
 }
 
 .conteudo-form {
@@ -64,9 +64,43 @@ body {
 }
 
 .buttonVisibilidadeSenha {
-  color:  rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 button {
   color: rgb(250, 250, 252);
+}
+
+@media screen and (max-width: 600px) {
+
+  .conteudo-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 10%;
+  }
+
+  img {
+    margin: 0px auto;
+    height: 170px;
+    width: 170px;
+    filter: drop-shadow(10px 10px 10px black);
+  }
+
+  .border-conteudo {
+    width: 70%;
+    height: 0px;
+    margin-top: 80px;
+    border: solid 2px rgba(8, 8, 8, 0);
+    box-shadow: 2px 3px 6px rgba(15, 15, 15, 0);
+    background-color: rgba(0, 0, 255, 0);
+  }
+
+  button {
+    margin-top: 10px;
+    filter: drop-shadow(10px 10px 10px black);
+    color: white;
+  }
 }
