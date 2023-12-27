@@ -5,7 +5,7 @@ import { IFormulario } from '../model/formulario.model';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { environment } from 'src/environments/environment.prod';
 
-const URL = environment.URLTEST
+const URL = environment.URLPROD
 
 @Injectable({
   providedIn: 'root'
